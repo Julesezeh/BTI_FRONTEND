@@ -1,0 +1,37 @@
+::-webkit-scrollbar {
+    width: 3px;
+    margin: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+    width:3px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 70px;
+    width:20px
+  }
+
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#ffce21, #ffce21)
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%
+}
+#image12:hover{
+    width:120%;
+    margin-left: 0px;
+}
