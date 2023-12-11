@@ -87,6 +87,7 @@
     color: lightyellow;
     border-color: white;
     transition: ease-in 700ms;
+    margin-left: 0px;
     box-shadow: 5px 10px 10px 10px #8888888e;
 
   }

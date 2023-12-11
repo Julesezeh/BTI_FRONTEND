@@ -14,11 +14,13 @@ function Project(props) {
       <div className="details">
         <span className={enlarge?"textEnlarged":null}>${props.price}</span>
         <br/>
-        <hr className={enlarge?"lineEnlarged":null} />
-        <span className="bottomText">{props.duration}</span>
+        {/* <hr className={enlarge?"lineEnlarged":null} /> */}
+        <div className="bottomText">
+          <span  >{props.duration}</span>
+        </div>
       </div>
     </div>
-  );
+  );  
 }
 
 export default Project;
