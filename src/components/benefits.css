@@ -1,0 +1,126 @@
+.proj {
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 450px;
+    width: 300px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: white;
+    transition: ease-in 200ms;
+    cursor: pointer;
+    position: inherit;
+    
+  }
+  .topText{
+    padding:10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+  
+  .bgimg {
+    color: rgb(27, 17, 17);
+    background-size: 120vh;
+    font-size: 2em;
+    font-weight: lighter;
+    font-weight: none;
+    font-family: "humnst777 blk bt";
+  }
+
+  .lineEnlarged{
+    color:white;
+    width:100%;
+    transition: ease-in-out 900ms;
+
+  }
+  .textRegular{
+    font-size: 1em;
+    transition: ease-in-out 700ms;
+
+  }
+
+  /* .textEnlarged{ */
+    /* font-size: 1.1em; */
+    /* transition: ease-in-out 700ms; */
+    
+
+  /* } */
+
+  .bottomText{
+    font-size: 0.5em;
+    padding-top: 40px;
+  }
+  #frst1 {
+    background-image: url("./forest1.jpg");
+    /* animation-name: example;
+    animation-duration: 4s; */
+  }
+  
+  #frst2 {
+    background-image: url("./forest6.jpg");
+  }
+  
+  #frst3 {
+    background-image: url("./forest4.jpg");
+  }
+  /* @keyframes example {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: blue;
+    }
+    100% {
+      background-color: green;
+    }
+  } */
+  .details{
+    margin-top: 10px;
+  }
+  
+  .added-height {
+    /* animation-name: heightincrease;
+    animation-duration: 1s; */
+    /* height: 320px; */
+    /* width: 320px; */
+    /* background-color:gray;
+    color: lightyellow; */
+    border-color: white;
+    /* transition: ease-in-out 200ms; */
+    margin-top: 10px;
+    /* box-shadow: 5px 10px 10px 10px #8888888e; */
+
+  }
+  
+  /* .reduced-height {
+    animation-name: decreaseheight;
+    animation-duration: 1s;
+  } */
+  
+  /* @keyframes heightincrease {
+    from {
+      height: 300px;
+      width: 300px;
+    }
+    to {
+      height: 400px;
+      width: 400px;
+    }
+  }
+  @keyframes decreaseheight {
+    from {
+      height: 400px;
+      width: 400px;
+    }
+    to {
+      height: 300px;
+      width: 300px;
+    }
+  } */
+  
