@@ -1,7 +1,7 @@
 .proj {
     padding-top: 80px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -9,7 +9,7 @@
     width: 300px;
     border-radius: 30px;
     border: 1px solid black;
-    background-color: beige;
+    background-color: white;
     transition: ease-in 0.8s;
     cursor: pointer;
     position: inherit;
@@ -37,15 +37,15 @@
   }
 
   .textEnlarged{
-    font-size: 1.3em;
-    transition: ease-in-out 700ms;
+    font-size: 1.1em;
+    /* transition: ease-in-out 700ms; */
     
 
   }
 
   .bottomText{
     font-size: 0.7em;
-    padding-top: 100px;
+    padding-top: 0px;
   }
   #frst1 {
     background-image: url("./forest1.jpg");
@@ -82,13 +82,13 @@
     /* animation-name: heightincrease;
     animation-duration: 1s; */
     /* height: 320px; */
-    width: 320px;
-    background-color:gray;
-    color: lightyellow;
+    /* width: 320px; */
+    /* background-color:gray;
+    color: lightyellow; */
     border-color: white;
-    transition: ease-in 700ms;
-    margin-left: 0px;
-    box-shadow: 5px 10px 10px 10px #8888888e;
+    /* transition: ease-in-out 200ms; */
+    margin-top: 10px;
+    /* box-shadow: 5px 10px 10px 10px #8888888e; */
 
   }
   
