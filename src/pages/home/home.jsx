@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../../components/navbar";
 import Project from "../../components/projects";
+import Benefit from "../../components/benefits";
 import GrainyBG from "../../assets/grainyBG2.jpg"
 
 const CardJson = [
@@ -31,6 +32,8 @@ const CardJson = [
   },
 ];
 
+
+
 const subscriptionPlans = [
   {
     "price": 99,
@@ -49,6 +52,28 @@ const subscriptionPlans = [
     "duration": "1 YEAR"
   }
 ]
+
+const benefits = [
+  {
+    "id":1,
+    "header":"Unlimited Coaching",
+    "benefit":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quidem sed amet aperiam nemo odit? Quos maxime laboriosam dignissimos necessitatibus, nostrum rerum earum odio ab eum nesciunt dolores id aliquid!"
+  },
+  {
+    "id":2,
+    "header":"Trading Tips",
+    "benefit":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quidem sed amet aperiam nemo odit? Quos maxime laboriosam dignissimos necessitatibus, nostrum rerum earum odio ab eum nesciunt dolores id aliquid!"
+  },
+  {
+    "id":3,
+    "header":"Monitored trades",
+    "benefit":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quidem sed amet aperiam nemo odit? Quos maxime laboriosam dignissimos necessitatibus, nostrum rerum earum odio ab eum nesciunt dolores id aliquid!"
+  }
+
+
+]
+
+
 const SkilledLearning = () => {
   return (
     <div className="overflowy-hidden overflow-x-hidden">
@@ -71,7 +96,7 @@ const SkilledLearning = () => {
                 Get started
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-white border hover:text-black border-black rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 text-gray-700 dark:border-gray-700 dark:hover:bg-yellow-400 dark:focus:ring-gray-800">
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-green-600 border hover:text-black border-black rounded-lg hover:bg-yellow-400 focus:ring-4 focus:ring-gray-100 text-white dark:border-gray-700 dark:hover:bg-yellow-400 dark:focus:ring-gray-800">
                 Register Now
             </a> 
         </div>
@@ -95,41 +120,35 @@ const SkilledLearning = () => {
           </div>
         </div>
       </div>
-      <hr/>
+      {/* <hr/>
       <div  className=" h-full w-full md:max-w-[60%] lg:max-w-[70%] xl:max-w-[70%] mx-auto">
         <div>
           <h1>What We Offer</h1>
         </div>
-      </div>
-        <hr />
+      </div> */}
+      <hr style={{width:"80%"}} className="mx-auto"/>
+        <div id="metorshipPlansSection" className="md:max-w-[60%] lg:max-w-[70%] xl:max-w-[70%] mx-auto">
+        <div className="bgimg">
+          <span><h2 style={{textAlign:"center", marginTop:50, color:"yellow", fontSize:"1.1em"}}>WHAT WE OFFER</h2></span>
+          <hr style={{width:"50%"}} className="mx-auto mt-4"/>
+        </div>
+        <div className="pt-56 md:pt-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-20 my-24 lg:my-32 place-items-center sm:place-items-stretch" style={{width:"100%"}}>
+          {
+            benefits.map((data,index)=>{
+              return(
+                <Benefit index={index} header={data.header} benefit={data.benefit}/>
+              );
+            })
+          }
+        </div>
+        </div>
+        <hr style={{width:"80%"}} className="mx-auto"/>
         <div id="metorshipPlansSection" className="md:max-w-[60%] lg:max-w-[70%] xl:max-w-[70%] mx-auto">
         <div className="bgimg">
           <span><h2 style={{textAlign:"center", marginTop:50, color:"white", fontSize:"1.1em"}}>Choose your <span className="text-purple-400">plan</span></h2></span>
+          <hr style={{width:"50%"}} className="mx-auto mt-4"/>
         </div>
         <div className="pt-56 md:pt-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-20 my-24 lg:my-32 place-items-center sm:place-items-stretch" style={{width:"100%"}}>
-          {/* <div className="hover:drop-shadow-2xl w-screen bg-gradient-to-r  from-pink-500 to-red-600 sm:max-w-xs rounded-xl px-10 py-5 text-white text-xl font-extrabold leading-8 shadow-xl">
-            Check out our most popular courses!
-          </div> */}
-          {/* {CardJson.map((data, index) => {
-            return (
-              <div
-                key={index}
-                className="shadow-xl hover:drop-shadow-2xl  bg-white sm:max-w-xs rounded-xl px-5 py-5 flex flex-col gap-4"
-              >
-                <img className="absolute -top-12" src={data.icon} alt="icon" />
-                <h1 className="text-[#13183f] font-extrabold text-xl">
-                  {data.title}
-                </h1>
-                <p className="text-[#83869a] min-h-[80px]">{data.desc}</p>
-                <div>
-                  <button className="text-pink-600 font-extrabold leading-7">
-                    Get Started
-                  </button>
-                </div>
-              </div>
-            );
-          })} */}
-
           {
             subscriptionPlans.map((data,index)=>{
               return(
@@ -139,6 +158,7 @@ const SkilledLearning = () => {
           }
         </div>
         </div>
+
       </div>
       <div className="flex justify-between items-center bg-[#13183f] py-5">
         <div className="px-5 max-w-3xl lg:max-w-5xl xl:max-w-5xl w-full flex justify-between mx-auto">
