@@ -12,11 +12,11 @@ function Project(props) {
       onMouseLeave={() => setEnlarge(false)}
     >
       <div className="details">
-        <span className={enlarge?"textEnlarged":null}>${props.price}</span>
+        <span className={enlarge?"topText textEnlarged":"topText"}>${props.price}</span>
         <br/>
         {/* <hr className={enlarge?"lineEnlarged":null} /> */}
         <div className="bottomText">
-          <span  >{props.duration}</span>
+          <span  >{props.duration} PLAN</span>
         </div>
       </div>
     </div>
