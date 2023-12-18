@@ -1,4 +1,4 @@
-.proj {
+.project {
     padding-top: 40px;
     text-align: center;
     margin-top: 30px;
@@ -15,13 +15,13 @@
     position: inherit;
     
   }
-  .topText{
+  .TopText{
     padding:10px;
     margin-bottom: 10px;
     font-size: 0.9em;
   }
   
-  .bgimg {
+  .Bgimg {
     color: rgb(27, 17, 17);
     background-size: 120vh;
     font-size: 2em;
@@ -30,13 +30,13 @@
     font-family: "humnst777 blk bt";
   }
 
-  .lineEnlarged{
+  .LineEnlarged{
     color:white;
     width:100%;
     transition: ease-in-out 900ms;
 
   }
-  .textRegular{
+  .TextRegular{
     font-size: 1em;
     transition: ease-in-out 700ms;
 
@@ -49,7 +49,7 @@
 
   /* } */
 
-  .bottomText{
+  .BottomText{
     font-size: 0.5em;
     padding-top: 40px;
   }
@@ -80,11 +80,11 @@
       background-color: green;
     }
   } */
-  .details{
+  .Details{
     margin-top: 10px;
   }
   
-  .added-height {
+  .Added-height {
     /* animation-name: heightincrease;
     animation-duration: 1s; */
     /* height: 320px; */
