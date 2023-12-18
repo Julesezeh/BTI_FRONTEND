@@ -6,16 +6,16 @@ function Benefit(props) {
 
   return (
     <div
-      className={enlarge ? "proj mx-auto bgimg added-height" : "proj bgimg"}
+      className={enlarge ? "project mx-auto Bgimg Added-height" : "project Bgimg"}
       id={props.index}
       onMouseEnter={() => setEnlarge(true)}
       onMouseLeave={() => setEnlarge(false)}
     >
-      <div className="details ">
-        <span className={enlarge?" topText textEnlarged":"topText"}>{props.header}</span>
+      <div className="Details ">
+        <span className={enlarge?" TopText TextEnlarged":"TopText"}>{props.header}</span>
         <br/>
         {/* <hr className={enlarge?"lineEnlarged":null} /> */}
-        <div className="bottomText">
+        <div className="BottomText">
           <span  >{props.benefit}</span>
         </div>
       </div>
